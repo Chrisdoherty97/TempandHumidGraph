@@ -21,12 +21,12 @@
     <div id="chart"></div>
     <h1 align="center">Temperature Readings</h1>
     <script>
+      var p = PUBNUB.init({
+		subscribe_key: 'sub-c-d5b343d8-3943-11e6-a169-02ee2ddab7fe',
+		publish_key:   'pub-c-61695fa6-317d-42aa-8f73-1bead73191ad'}
       eon.chart({
   history: true,
   channel: 'Temperature',
-  var p = PUBNUB.init({
-		subscribe_key: 'sub-c-d5b343d8-3943-11e6-a169-02ee2ddab7fe',
-		publish_key:   'pub-c-61695fa6-317d-42aa-8f73-1bead73191ad'
   flow: true,
   generate: {
     bindto: '#chart',
