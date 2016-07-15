@@ -5,7 +5,7 @@
     <script>
       eon.chart({
   history: true,
-  channel: 'tempeon',
+  channel: 'Temperature',
   flow: true,
   generate: {
     bindto: '#chart',
